@@ -53,26 +53,10 @@ Visual perception tasks on raw raster and ASCII pixel grids suffer from high dim
 
 ## System Architecture and Workflow
 
-```
-[ Raw Visual Datasets: ASCII Grid Handwritten Digits & Facial Rasters ]
- |
- v
-[ Custom Feature Extraction & Spatial Pooling Pipeline (loaddata.py) ]
- + Pixel Intensity Normalization & Binary Thresholding
- + Grid Coordinate Feature Flattening
- + Average/Max Spatial Pooling for Dimensionality Reduction
- |
- v
-[ Multi-Paradigm Algorithmic Implementations (from Scratch) ]
- ├── 1. Perceptron Suite (Perceptron_Digits.py, Perceptron_Faces.py)
- ├── 2. Naive Bayes Suite (NaiveBayes_Digits.py, NaiveByes_Faces.py)
- └── 3. Neural Network Suite (Neural_Network_Digits.py, Neural_Network_Faces.py)
- |
- v
-[ Empirical Benchmarking across Incremental Sample Sizes (10% -> 100%) ]
- + Accuracy Convergence Trajectories
- + Training and Inference Time Profiling (Seconds)
-```
+<div align="center">
+  <img src="plots/architecture_pipeline.png" alt="System Architecture and Workflow Pipeline" width="100%">
+  <p><em>Figure 1: End-to-End Architectural Pipeline for Foundational Visual Pattern Recognition Engine, detailing raw raster intake, spatial feature pooling, multi-paradigm algorithmic suites (Perceptron, Naive Bayes, MLP), and sample-size scaling benchmarking.</em></p>
+</div>
 
 ---
 
